@@ -7,16 +7,29 @@
 //
 
 #import "ViewController.h"
+#import "InputViewController.h"
+#import "Car.h"
 
-@interface ViewController ()
+@interface ViewController ()<InputViewControllerDelegate>
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
 
 @implementation ViewController
 
+-(void)inputDidEnterText:(NSString *)string{
+    self.label.text = string;
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    Car * car = [Car new];
+//    _label.text;
+    car.price = 200;
+    
+    NSLog(@"%d",car.price);
+    
 }
 
 
@@ -24,6 +37,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    InputViewController * inputVC =  segue.destinationViewController;
+    
+    inputVC.delegate = self;
+}
 
 @end

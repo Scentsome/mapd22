@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  DelegatePractice
+//  DelegateBlock
 //
 //  Created by Michael on 01/03/2018.
 //  Copyright © 2018 Zencher. All rights reserved.
@@ -16,6 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Override point for customization after application launch.
     return YES;
 }
 
