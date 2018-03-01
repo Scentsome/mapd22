@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol InputViewControllerDelegate
--(void) inputDidEnterText:(NSString *) inputString;
-@end
+//@protocol InputViewControllerDelegate
+//-(void) inputDidEnterText:(NSString *) inputString;
+//@end
 
 @interface InputViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *inputField;
 - (IBAction)send:(id)sender;
-@property id<InputViewControllerDelegate> delegate;
+//@property id<InputViewControllerDelegate> delegate;
+@property  void (^dataBlock)(NSString * data) ;
 @end

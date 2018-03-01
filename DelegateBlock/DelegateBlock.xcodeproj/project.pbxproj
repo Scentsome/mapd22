@@ -13,6 +13,7 @@
 		4CE9CB352047C9D0004904F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CE9CB342047C9D0004904F9 /* Assets.xcassets */; };
 		4CE9CB382047C9D0004904F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE9CB362047C9D0004904F9 /* LaunchScreen.storyboard */; };
 		4CE9CB3B2047C9D0004904F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9CB3A2047C9D0004904F9 /* main.m */; };
+		4CE9CB432047CA13004904F9 /* InputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9CB422047CA13004904F9 /* InputViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		4CE9CB372047C9D0004904F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CE9CB392047C9D0004904F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CE9CB3A2047C9D0004904F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CE9CB412047CA13004904F9 /* InputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputViewController.h; sourceTree = "<group>"; };
+		4CE9CB422047CA13004904F9 /* InputViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,8 @@
 		4CE9CB1F2047C9D0004904F9 = {
 			isa = PBXGroup;
 			children = (
+				4CE9CB412047CA13004904F9 /* InputViewController.h */,
+				4CE9CB422047CA13004904F9 /* InputViewController.m */,
 				4CE9CB2A2047C9D0004904F9 /* DelegateBlock */,
 				4CE9CB292047C9D0004904F9 /* Products */,
 			);
@@ -145,6 +150,7 @@
 				4CE9CB302047C9D0004904F9 /* ViewController.m in Sources */,
 				4CE9CB3B2047C9D0004904F9 /* main.m in Sources */,
 				4CE9CB2D2047C9D0004904F9 /* AppDelegate.m in Sources */,
+				4CE9CB432047CA13004904F9 /* InputViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

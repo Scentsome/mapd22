@@ -15,13 +15,19 @@
 
 @implementation InputViewController
 - (IBAction)send:(id)sender {
-    
-    [self.delegate inputDidEnterText:self.inputField.text];
+    self.dataBlock(self.inputField.text);
+//    [self.delegate inputDidEnterText:self.inputField.text];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+//    void (^dataBlock)(NSString * data) ;
+//    dataBlock = ^(NSString * data) {
+//        NSLog(@"%@",data);
+//    };
+    
 }
 
 - (void)didReceiveMemoryWarning {

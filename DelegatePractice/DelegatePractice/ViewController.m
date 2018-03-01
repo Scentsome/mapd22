@@ -10,17 +10,18 @@
 #import "InputViewController.h"
 #import "Car.h"
 
-@interface ViewController ()<InputViewControllerDelegate>
+@interface ViewController ()
+//<InputViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
 
 @implementation ViewController
 
--(void)inputDidEnterText:(NSString *)string{
-    self.label.text = string;
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
+//-(void)inputDidEnterText:(NSString *)string{
+//    self.label.text = string;
+//    [self dismissViewControllerAnimated:YES completion:nil];
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -39,8 +40,11 @@
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     InputViewController * inputVC =  segue.destinationViewController;
-    
-    inputVC.delegate = self;
+    inputVC.dataBlock = ^(NSString * data){
+        self.label.text = data;
+        [self dismissViewControllerAnimated:YES completion:nil];
+    };
+//    inputVC.delegate = self;
 }
 
 @end
