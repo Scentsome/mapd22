@@ -31,5 +31,9 @@ class GrayViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    deinit {
+        print("destroy vc")
+    }
 
 }
