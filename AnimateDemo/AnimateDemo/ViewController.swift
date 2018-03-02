@@ -20,11 +20,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     override func viewWillAppear(_ animated: Bool) {
-        let toRight = CASpringAnimation(keyPath: "position.x")
-        toRight.damping = 10.0
-        toRight.fromValue = 0
-        toRight.toValue = 200
-        toRight.duration = 1.0
+        print(self.accountField.frame)
+        let toRight = CAKeyframeAnimation(keyPath: "position")
+//        toRight.damping = 10.0
+//        toRight.fromValue = 0
+//        toRight.toValue = 200
+        
+        toRight.values = [CGPoint(x:0,y:0),CGPoint(x:100,y:100),CGPoint(x:96+93.5,y:98+15)].map({ NSValue(cgPoint:$0)
+        })
+        
+        toRight.keyTimes = [0,0.5,1.0]
+        toRight.duration = 0.5
         toRight.delegate = self
 //        toRight.autoreverses = true
 
