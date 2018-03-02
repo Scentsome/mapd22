@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C89E9FC2048E2230053AC16 /* GrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89E9FB2048E2230053AC16 /* GrayView.swift */; };
+		4C89E9FE2048E44A0053AC16 /* buyiPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C89E9FD2048E4490053AC16 /* buyiPad.png */; };
 		4CE9CB512047CCB6004904F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9CB502047CCB6004904F9 /* AppDelegate.swift */; };
 		4CE9CB532047CCB6004904F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9CB522047CCB6004904F9 /* ViewController.swift */; };
 		4CE9CB562047CCB6004904F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE9CB542047CCB6004904F9 /* Main.storyboard */; };
@@ -15,9 +17,12 @@
 		4CE9CB632047CE09004904F9 /* MyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9CB622047CE09004904F9 /* MyDelegate.swift */; };
 		4CE9CB652047D48C004904F9 /* MyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9CB642047D48C004904F9 /* MyLabel.swift */; };
 		4CE9CB682047E7D2004904F9 /* GrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9CB672047E7D2004904F9 /* GrayViewController.swift */; };
+		4CE9CB6B2047F28D004904F9 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE9CB692047F28D004904F9 /* Second.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C89E9FB2048E2230053AC16 /* GrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayView.swift; sourceTree = "<group>"; };
+		4C89E9FD2048E4490053AC16 /* buyiPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buyiPad.png; sourceTree = "<group>"; };
 		4CE9CB4D2047CCB6004904F9 /* ReviewMVC_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReviewMVC_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE9CB502047CCB6004904F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CE9CB522047CCB6004904F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +33,7 @@
 		4CE9CB622047CE09004904F9 /* MyDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDelegate.swift; sourceTree = "<group>"; };
 		4CE9CB642047D48C004904F9 /* MyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLabel.swift; sourceTree = "<group>"; };
 		4CE9CB672047E7D2004904F9 /* GrayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayViewController.swift; sourceTree = "<group>"; };
+		4CE9CB6A2047F28D004904F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ReviewMVC_swift/Base.lproj/Second.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +50,8 @@
 		4CE9CB442047CCB6004904F9 = {
 			isa = PBXGroup;
 			children = (
+				4CE9CB692047F28D004904F9 /* Second.storyboard */,
+				4CE9CB662047D49A004904F9 /* view */,
 				4CE9CB4F2047CCB6004904F9 /* ReviewMVC_swift */,
 				4CE9CB4E2047CCB6004904F9 /* Products */,
 			);
@@ -60,7 +68,7 @@
 		4CE9CB4F2047CCB6004904F9 /* ReviewMVC_swift */ = {
 			isa = PBXGroup;
 			children = (
-				4CE9CB662047D49A004904F9 /* view */,
+				4C89E9FD2048E4490053AC16 /* buyiPad.png */,
 				4CE9CB502047CCB6004904F9 /* AppDelegate.swift */,
 				4CE9CB522047CCB6004904F9 /* ViewController.swift */,
 				4CE9CB542047CCB6004904F9 /* Main.storyboard */,
@@ -69,6 +77,7 @@
 				4CE9CB5C2047CCB6004904F9 /* Info.plist */,
 				4CE9CB622047CE09004904F9 /* MyDelegate.swift */,
 				4CE9CB672047E7D2004904F9 /* GrayViewController.swift */,
+				4C89E9FB2048E2230053AC16 /* GrayView.swift */,
 			);
 			path = ReviewMVC_swift;
 			sourceTree = "<group>";
@@ -140,6 +149,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C89E9FE2048E44A0053AC16 /* buyiPad.png in Resources */,
+				4CE9CB6B2047F28D004904F9 /* Second.storyboard in Resources */,
 				4CE9CB5B2047CCB6004904F9 /* LaunchScreen.storyboard in Resources */,
 				4CE9CB582047CCB6004904F9 /* Assets.xcassets in Resources */,
 				4CE9CB562047CCB6004904F9 /* Main.storyboard in Resources */,
@@ -156,6 +167,7 @@
 				4CE9CB532047CCB6004904F9 /* ViewController.swift in Sources */,
 				4CE9CB512047CCB6004904F9 /* AppDelegate.swift in Sources */,
 				4CE9CB652047D48C004904F9 /* MyLabel.swift in Sources */,
+				4C89E9FC2048E2230053AC16 /* GrayView.swift in Sources */,
 				4CE9CB682047E7D2004904F9 /* GrayViewController.swift in Sources */,
 				4CE9CB632047CE09004904F9 /* MyDelegate.swift in Sources */,
 			);
@@ -178,6 +190,14 @@
 				4CE9CB5A2047CCB6004904F9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4CE9CB692047F28D004904F9 /* Second.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CE9CB6A2047F28D004904F9 /* Base */,
+			);
+			name = Second.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
