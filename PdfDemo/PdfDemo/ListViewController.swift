@@ -7,14 +7,52 @@
 //
 
 import UIKit
+import PDFKit
 
-class ListViewController: UITableViewController {
+class ListViewController: UITableViewController, DocumentViewControllerDelegate {
     var data:[(String,Bool)] = ["1","2","3","4","5","6","7","8","11","12","13","14","21","22","23","24","31","32","33","34","13","14","21","22","23","24","31","32","33","34"].map { (str) -> (String,Bool) in
         return (str,false)
     }
     var documents:Array<NSString>! = []
-
     
+    
+//    func contractsDirectory() {
+//        print(NSHomeDirectory())
+//        let contractsURL:URL = URL(fileURLWithPath:
+//            NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+//                .appending("contracts"))
+//        print(contractsURL)
+//    }
+    
+    func contractsDirectory() -> String {
+        
+        let contractsURL:URL = URL(fileURLWithPath:
+            NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+                .appending("contracts"))
+        
+        let contractsPath:String = String(format:"%@",contractsURL.path)
+        
+        if (!FileManager.default.fileExists(atPath: contractsPath)) {
+            do {
+                try FileManager.default.createDirectory(atPath: contractsPath,withIntermediateDirectories: true, attributes: nil)
+            } catch {
+                print("Create Error")
+            }
+        }
+        return contractsPath;
+    }
+    func didSaveDocument() {
+        loadDocuments()
+
+    }
+    func loadDocuments() {
+        do {
+            documents = try FileManager.default.contentsOfDirectory(atPath: contractsDirectory()) as Array<NSString>
+        } catch {
+            print("Load Error")
+        }
+        tableView.reloadData()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -101,6 +139,32 @@ class ListViewController: UITableViewController {
         cell?.accessoryType = .checkmark
         
         data[indexPath.row].1 = true
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier ==
+            "NewContractSegue" {
+            let vc:ViewController = segue.destination as! ViewController
+            let pdfPath:String = Bundle.main.path(forResource: "contractTemplate", ofType: "pdf")!
+            vc.document = PDFDocument(url: URL(fileURLWithPath: pdfPath))
+            vc.title = "New Contract"
+            vc.addAnnotations = true
+            vc.delegate = self
+        }
+        if segue.identifier ==
+        "CurrentContractSegue" {
+            let vc:ViewController = segue.destination as! ViewController
+            let document:NSString = documents[tableView.indexPath(for: sender as! UITableViewCell)!.row]
+            vc.addAnnotations = false
+            vc.title = document as String
+            let url:URL = URL(fileURLWithPath: contractsDirectory())
+                .appendingPathComponent(document as String)
+            let data = NSData(contentsOfFile: url.path)
+            vc.document = PDFDocument(data: data! as Data)
+            vc.delegate = self
+            
+        }
+
     }
 
 }

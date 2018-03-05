@@ -26,6 +26,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="CurrentContractSegue" id="9Ce-qK-0Xk"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -33,7 +36,13 @@
                             <outlet property="delegate" destination="PfT-gs-dLk" id="StQ-M4-QEe"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="JlM-o8-8Uh"/>
+                    <navigationItem key="navigationItem" id="JlM-o8-8Uh">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="l7j-Mr-50E">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="presentation" identifier="NewContractSegue" id="1mo-Vi-xEG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lqn-4v-XdK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="865" y="130"/>
+            <point key="canvasLocation" x="1090" y="130"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dbA-e5-H9Q">
@@ -83,4 +92,7 @@
             <point key="canvasLocation" x="-550.39999999999998" y="139.43028485757122"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="9Ce-qK-0Xk"/>
+    </inferredMetricsTieBreakers>
 </document>

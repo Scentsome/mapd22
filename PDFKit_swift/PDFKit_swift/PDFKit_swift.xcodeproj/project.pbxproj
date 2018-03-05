@@ -7,31 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4CFD67A7204CD2EA000B9208 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD67A6204CD2EA000B9208 /* AppDelegate.swift */; };
-		4CFD67A9204CD2EA000B9208 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD67A8204CD2EA000B9208 /* ViewController.swift */; };
-		4CFD67AC204CD2EA000B9208 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CFD67AA204CD2EA000B9208 /* Main.storyboard */; };
-		4CFD67AE204CD2EA000B9208 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CFD67AD204CD2EA000B9208 /* Assets.xcassets */; };
-		4CFD67B1204CD2EA000B9208 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CFD67AF204CD2EA000B9208 /* LaunchScreen.storyboard */; };
-		4CFD67B9204CD365000B9208 /* 10_mission_3_password.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4CFD67B8204CD365000B9208 /* 10_mission_3_password.pdf */; };
-		4CFD67BB204CD486000B9208 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD67BA204CD486000B9208 /* ListViewController.swift */; };
-		4CFD67BD204CE481000B9208 /* contractTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4CFD67BC204CE481000B9208 /* contractTemplate.pdf */; };
+		87FA10E120491B410024CAB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FA10E020491B410024CAB4 /* AppDelegate.swift */; };
+		87FA10E620491B410024CAB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FA10E420491B410024CAB4 /* Main.storyboard */; };
+		87FA10E820491B410024CAB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87FA10E720491B410024CAB4 /* Assets.xcassets */; };
+		87FA10EB20491B410024CAB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FA10E920491B410024CAB4 /* LaunchScreen.storyboard */; };
+		87FA10F320491C760024CAB4 /* ContractsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FA10F220491C760024CAB4 /* ContractsTableViewController.swift */; };
+		87FA10F520491CAD0024CAB4 /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FA10F420491CAD0024CAB4 /* DocumentViewController.swift */; };
+		87FA10F720492DB40024CAB4 /* contractTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 87FA10F620492DB40024CAB4 /* contractTemplate.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4CFD67A3204CD2EA000B9208 /* PdfDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PdfDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CFD67A6204CD2EA000B9208 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4CFD67A8204CD2EA000B9208 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4CFD67AB204CD2EA000B9208 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4CFD67AD204CD2EA000B9208 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4CFD67B0204CD2EA000B9208 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4CFD67B2204CD2EA000B9208 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CFD67B8204CD365000B9208 /* 10_mission_3_password.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 10_mission_3_password.pdf; sourceTree = "<group>"; };
-		4CFD67BA204CD486000B9208 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		4CFD67BC204CE481000B9208 /* contractTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = contractTemplate.pdf; sourceTree = "<group>"; };
+		87FA10DD20491B410024CAB4 /* PDFKit_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFKit_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87FA10E020491B410024CAB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		87FA10E520491B410024CAB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87FA10E720491B410024CAB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87FA10EA20491B410024CAB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87FA10EC20491B410024CAB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87FA10F220491C760024CAB4 /* ContractsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractsTableViewController.swift; sourceTree = "<group>"; };
+		87FA10F420491CAD0024CAB4 /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
+		87FA10F620492DB40024CAB4 /* contractTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = contractTemplate.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4CFD67A0204CD2EA000B9208 /* Frameworks */ = {
+		87FA10DA20491B410024CAB4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,75 +39,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4CFD679A204CD2EA000B9208 = {
+		87FA10D420491B410024CAB4 = {
 			isa = PBXGroup;
 			children = (
-				4CFD67A5204CD2EA000B9208 /* PdfDemo */,
-				4CFD67A4204CD2EA000B9208 /* Products */,
+				87FA10DF20491B410024CAB4 /* PDFKit_swift */,
+				87FA10DE20491B410024CAB4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4CFD67A4204CD2EA000B9208 /* Products */ = {
+		87FA10DE20491B410024CAB4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4CFD67A3204CD2EA000B9208 /* PdfDemo.app */,
+				87FA10DD20491B410024CAB4 /* PDFKit_swift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4CFD67A5204CD2EA000B9208 /* PdfDemo */ = {
+		87FA10DF20491B410024CAB4 /* PDFKit_swift */ = {
 			isa = PBXGroup;
 			children = (
-				4CFD67BC204CE481000B9208 /* contractTemplate.pdf */,
-				4CFD67B8204CD365000B9208 /* 10_mission_3_password.pdf */,
-				4CFD67A6204CD2EA000B9208 /* AppDelegate.swift */,
-				4CFD67A8204CD2EA000B9208 /* ViewController.swift */,
-				4CFD67AA204CD2EA000B9208 /* Main.storyboard */,
-				4CFD67AD204CD2EA000B9208 /* Assets.xcassets */,
-				4CFD67AF204CD2EA000B9208 /* LaunchScreen.storyboard */,
-				4CFD67B2204CD2EA000B9208 /* Info.plist */,
-				4CFD67BA204CD486000B9208 /* ListViewController.swift */,
+				87FA10E020491B410024CAB4 /* AppDelegate.swift */,
+				87FA10E420491B410024CAB4 /* Main.storyboard */,
+				87FA10E720491B410024CAB4 /* Assets.xcassets */,
+				87FA10E920491B410024CAB4 /* LaunchScreen.storyboard */,
+				87FA10EC20491B410024CAB4 /* Info.plist */,
+				87FA10F220491C760024CAB4 /* ContractsTableViewController.swift */,
+				87FA10F420491CAD0024CAB4 /* DocumentViewController.swift */,
+				87FA10F620492DB40024CAB4 /* contractTemplate.pdf */,
 			);
-			path = PdfDemo;
+			path = PDFKit_swift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4CFD67A2204CD2EA000B9208 /* PdfDemo */ = {
+		87FA10DC20491B410024CAB4 /* PDFKit_swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4CFD67B5204CD2EA000B9208 /* Build configuration list for PBXNativeTarget "PdfDemo" */;
+			buildConfigurationList = 87FA10EF20491B410024CAB4 /* Build configuration list for PBXNativeTarget "PDFKit_swift" */;
 			buildPhases = (
-				4CFD679F204CD2EA000B9208 /* Sources */,
-				4CFD67A0204CD2EA000B9208 /* Frameworks */,
-				4CFD67A1204CD2EA000B9208 /* Resources */,
+				87FA10D920491B410024CAB4 /* Sources */,
+				87FA10DA20491B410024CAB4 /* Frameworks */,
+				87FA10DB20491B410024CAB4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = PdfDemo;
-			productName = PdfDemo;
-			productReference = 4CFD67A3204CD2EA000B9208 /* PdfDemo.app */;
+			name = PDFKit_swift;
+			productName = PDFKit_swift;
+			productReference = 87FA10DD20491B410024CAB4 /* PDFKit_swift.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4CFD679B204CD2EA000B9208 /* Project object */ = {
+		87FA10D520491B410024CAB4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = Zencher;
+				ORGANIZATIONNAME = cora;
 				TargetAttributes = {
-					4CFD67A2204CD2EA000B9208 = {
+					87FA10DC20491B410024CAB4 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 4CFD679E204CD2EA000B9208 /* Build configuration list for PBXProject "PdfDemo" */;
+			buildConfigurationList = 87FA10D820491B410024CAB4 /* Build configuration list for PBXProject "PDFKit_swift" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,57 +114,56 @@
 				en,
 				Base,
 			);
-			mainGroup = 4CFD679A204CD2EA000B9208;
-			productRefGroup = 4CFD67A4204CD2EA000B9208 /* Products */;
+			mainGroup = 87FA10D420491B410024CAB4;
+			productRefGroup = 87FA10DE20491B410024CAB4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4CFD67A2204CD2EA000B9208 /* PdfDemo */,
+				87FA10DC20491B410024CAB4 /* PDFKit_swift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4CFD67A1204CD2EA000B9208 /* Resources */ = {
+		87FA10DB20491B410024CAB4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CFD67BD204CE481000B9208 /* contractTemplate.pdf in Resources */,
-				4CFD67B1204CD2EA000B9208 /* LaunchScreen.storyboard in Resources */,
-				4CFD67AE204CD2EA000B9208 /* Assets.xcassets in Resources */,
-				4CFD67AC204CD2EA000B9208 /* Main.storyboard in Resources */,
-				4CFD67B9204CD365000B9208 /* 10_mission_3_password.pdf in Resources */,
+				87FA10EB20491B410024CAB4 /* LaunchScreen.storyboard in Resources */,
+				87FA10E820491B410024CAB4 /* Assets.xcassets in Resources */,
+				87FA10F720492DB40024CAB4 /* contractTemplate.pdf in Resources */,
+				87FA10E620491B410024CAB4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4CFD679F204CD2EA000B9208 /* Sources */ = {
+		87FA10D920491B410024CAB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CFD67A9204CD2EA000B9208 /* ViewController.swift in Sources */,
-				4CFD67A7204CD2EA000B9208 /* AppDelegate.swift in Sources */,
-				4CFD67BB204CD486000B9208 /* ListViewController.swift in Sources */,
+				87FA10F520491CAD0024CAB4 /* DocumentViewController.swift in Sources */,
+				87FA10F320491C760024CAB4 /* ContractsTableViewController.swift in Sources */,
+				87FA10E120491B410024CAB4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4CFD67AA204CD2EA000B9208 /* Main.storyboard */ = {
+		87FA10E420491B410024CAB4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4CFD67AB204CD2EA000B9208 /* Base */,
+				87FA10E520491B410024CAB4 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		4CFD67AF204CD2EA000B9208 /* LaunchScreen.storyboard */ = {
+		87FA10E920491B410024CAB4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4CFD67B0204CD2EA000B9208 /* Base */,
+				87FA10EA20491B410024CAB4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -175,7 +171,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4CFD67B3204CD2EA000B9208 /* Debug */ = {
+		87FA10ED20491B410024CAB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -232,7 +228,7 @@
 			};
 			name = Debug;
 		};
-		4CFD67B4204CD2EA000B9208 /* Release */ = {
+		87FA10EE20491B410024CAB4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,28 +278,30 @@
 			};
 			name = Release;
 		};
-		4CFD67B6204CD2EA000B9208 /* Debug */ = {
+		87FA10F020491B410024CAB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PdfDemo/Info.plist;
+				DEVELOPMENT_TEAM = T59TDK9D3N;
+				INFOPLIST_FILE = PDFKit_swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zencher.demo.PdfDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zencher.cora.PDFKit-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		4CFD67B7204CD2EA000B9208 /* Release */ = {
+		87FA10F120491B410024CAB4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PdfDemo/Info.plist;
+				DEVELOPMENT_TEAM = T59TDK9D3N;
+				INFOPLIST_FILE = PDFKit_swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zencher.demo.PdfDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zencher.cora.PDFKit-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,25 +311,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4CFD679E204CD2EA000B9208 /* Build configuration list for PBXProject "PdfDemo" */ = {
+		87FA10D820491B410024CAB4 /* Build configuration list for PBXProject "PDFKit_swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4CFD67B3204CD2EA000B9208 /* Debug */,
-				4CFD67B4204CD2EA000B9208 /* Release */,
+				87FA10ED20491B410024CAB4 /* Debug */,
+				87FA10EE20491B410024CAB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4CFD67B5204CD2EA000B9208 /* Build configuration list for PBXNativeTarget "PdfDemo" */ = {
+		87FA10EF20491B410024CAB4 /* Build configuration list for PBXNativeTarget "PDFKit_swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4CFD67B6204CD2EA000B9208 /* Debug */,
-				4CFD67B7204CD2EA000B9208 /* Release */,
+				87FA10F020491B410024CAB4 /* Debug */,
+				87FA10F120491B410024CAB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4CFD679B204CD2EA000B9208 /* Project object */;
+	rootObject = 87FA10D520491B410024CAB4 /* Project object */;
 }
