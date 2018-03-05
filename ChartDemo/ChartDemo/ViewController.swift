@@ -12,13 +12,24 @@ import Charts
 class ViewController: UIViewController {
 
     @IBOutlet weak var pieChartView: PieChartView!
+    
+    @IBAction func doRotation(_ sender: Any) {
+        self.pieChartView.rotationAngle = 45
+//        self.pieChartView.
+
+    }
+    @IBOutlet weak var rotate: UIButton!
+    @IBAction func highlight(_ sender: Any) {
+        pieChartView.highlightValue(x: 2, y: 1, dataSetIndex: 0)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         pieChartView.noDataText = "沒有資料"
+        pieChartView.delegate = self
         setupData()
     }
     func setupData()  {
-        let pieChartRawData:Dictionary = ["iOS 8":84, "iOS 7":14, "Earlier":2]
+        let pieChartRawData:Dictionary = ["iOS 8":84, "iOS 7":14, "Earlier":20]
         var yValues:[PieChartDataEntry] = []
         for (label, value) in pieChartRawData {
             let entry:PieChartDataEntry = PieChartDataEntry(value: Double(value), label: label)
@@ -35,16 +46,18 @@ class ViewController: UIViewController {
         dataSet.colors = colors
         
         var pFormatter:NumberFormatter = NumberFormatter()
-        pFormatter.numberStyle = .percent
-        pFormatter.maximumFractionDigits = 1
+        pFormatter.numberStyle = .decimal
+        pFormatter.maximumFractionDigits = 2
         pFormatter.multiplier = 1
-        pFormatter.percentSymbol = "%"
+//        pFormatter.percentSymbol = "%"
     pieChartData.setValueFormatter(DefaultValueFormatter(formatter:pFormatter))
         
         pieChartData.setValueFont(UIFont(name: "Helvetica", size: 22))
             
         pieChartData.setValueTextColor(UIColor.blue)
         
+    }
+    override func viewDidAppear(_ animated: Bool) {
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,5 +66,16 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+extension ViewController : ChartViewDelegate {
+    func chartValueSelected(_ chartView: ChartViewBase, entry: ChartDataEntry, highlight: Highlight){
+        print(entry)
+    }
+    
+    // Called when nothing has been selected or an "un-select" has been made.
+    func chartValueNothingSelected(_ chartView: ChartViewBase){
+        print("Nothing selected")
+    }
 }
 
