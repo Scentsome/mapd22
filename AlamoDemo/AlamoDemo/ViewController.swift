@@ -66,7 +66,17 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        var urlString = "http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=9d6b643e-5d71-46e7-8368-eb0aaf907171"
+        
+        Alamofire.request(urlString).responseJSON { (response) in
+            do {
+                var openData:OpenData = try JSONDecoder().decode( OpenData.self, from: response.data!)
+                
+                print(openData.result.results[1].機構地址)
+            } catch {
+                print(error)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

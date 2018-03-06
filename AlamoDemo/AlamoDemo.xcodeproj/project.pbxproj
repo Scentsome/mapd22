@@ -13,6 +13,7 @@
 		4C8D7C21204E732000E6AB7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D7C20204E732000E6AB7C /* Assets.xcassets */; };
 		4C8D7C24204E732000E6AB7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D7C22204E732000E6AB7C /* LaunchScreen.storyboard */; };
 		4C8D7C2C204E785D00E6AB7C /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D7C2B204E785D00E6AB7C /* cat.jpg */; };
+		4C8D7C2E204E852400E6AB7C /* OpenStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D7C2D204E852400E6AB7C /* OpenStruct.swift */; };
 		5358CFB1132631B6575D65F4 /* Pods_AlamoDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1D48D10C3D7C35B647CC68 /* Pods_AlamoDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		4C8D7C23204E732000E6AB7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C8D7C25204E732000E6AB7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C8D7C2B204E785D00E6AB7C /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
+		4C8D7C2D204E852400E6AB7C /* OpenStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenStruct.swift; sourceTree = "<group>"; };
 		5B1D48D10C3D7C35B647CC68 /* Pods_AlamoDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamoDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 				4C8D7C20204E732000E6AB7C /* Assets.xcassets */,
 				4C8D7C22204E732000E6AB7C /* LaunchScreen.storyboard */,
 				4C8D7C25204E732000E6AB7C /* Info.plist */,
+				4C8D7C2D204E852400E6AB7C /* OpenStruct.swift */,
 			);
 			path = AlamoDemo;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			files = (
 				4C8D7C1C204E732000E6AB7C /* ViewController.swift in Sources */,
 				4C8D7C1A204E732000E6AB7C /* AppDelegate.swift in Sources */,
+				4C8D7C2E204E852400E6AB7C /* OpenStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
