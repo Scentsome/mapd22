@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import Kanna
 class ViewController: UIViewController {
     let hostURI = "http://localhost:8080"
     
@@ -76,7 +77,7 @@ class ViewController: UIViewController {
         let params = [
             "user":"michael",
             "age":"23"
-            ] as [String : Any]
+            ] 
         Alamofire.request(postURL, method: .post, parameters: params, encoding: JSONEncoding.default)
             .responseJSON { response in
                 debugPrint(response)
@@ -86,6 +87,7 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        parseXML()
         var urlString = "http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=9d6b643e-5d71-46e7-8368-eb0aaf907171"
         
         Alamofire.request(urlString).responseJSON { (response) in
@@ -104,6 +106,27 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func parseXML(){
+        var urlString = "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeX&category=8"
+        
+        Alamofire.request(urlString).response { (response) in
+            if let doc:XMLDocument = try? Kanna.XML(xml: response.data!, encoding: .utf8){
+                var elements = doc.xpath("//Info/@title")
+                
+                
+                
+                for elem in elements {
+                    print(elem.text)
+//                    print(elem.tagName)
+//                    print(elem)
+                }
+            }
+            
+                
+                
+
+            }
+    }
 
 }
 
