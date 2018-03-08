@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
+import FirebaseStorage
 
 class ViewController: UIViewController {
     
@@ -67,6 +68,59 @@ class ViewController: UIViewController {
         
 //        ref.child("message")
     }
+    @IBAction func uploadImage(_ sender: Any) {
+        
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        present(imagePickerController, animated: true, completion: nil)
+    }
     
+}
+
+extension ViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        var selectedImageFromPicker: UIImage?
+        
+        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            
+            selectedImageFromPicker = pickedImage
+        }
+        
+        let uniqueString = NSUUID().uuidString
+        
+        if let selectedImage = selectedImageFromPicker {
+            
+            if let selectedImage = selectedImageFromPicker {
+                let storageRef = Storage.storage().reference().child("ImageFireUpload").child("\(uniqueString).png")
+                if let uploadData = UIImagePNGRepresentation(selectedImage) {
+                    storageRef.putData(uploadData, metadata: nil, completion: { (data, error) in
+                        if error != nil {
+                            print("Error: \(error!.localizedDescription)")
+                            return
+                        }
+                        if let uploadImageUrl = data?.downloadURL()?.absoluteString {
+                            print("Photo Url: \(uploadImageUrl)")
+                            let databaseRef = Database.database().reference().child("ImageFireUpload").child(uniqueString)
+                            
+                            databaseRef.setValue(uploadImageUrl, withCompletionBlock: { (error, dataRef) in
+                                if error != nil {
+                                    print("Database Error: \(error!.localizedDescription)")
+                                }else {
+                                    print("圖片已儲存")
+                                }
+                            })
+
+                        }
+                    })
+                }
+                print("\(uniqueString), \(selectedImage)")
+            }
+            
+            
+        }
+        
+        dismiss(animated: true, completion: nil)
+
+    }
 }
 

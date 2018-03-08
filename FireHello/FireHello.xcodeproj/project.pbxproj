@@ -12,6 +12,10 @@
 		4C46F58A204E25DA007D58FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C46F588204E25DA007D58FA /* Main.storyboard */; };
 		4C46F58C204E25DA007D58FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C46F58B204E25DA007D58FA /* Assets.xcassets */; };
 		4C46F58F204E25DA007D58FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C46F58D204E25DA007D58FA /* LaunchScreen.storyboard */; };
+		4C6733222050D9AC0064C160 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C6733212050D9AC0064C160 /* GoogleService-Info.plist */; };
+		4C6733242050E61D0064C160 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6733232050E61D0064C160 /* PhotosViewController.swift */; };
+		4C673326205104810064C160 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C673325205104810064C160 /* ImageCollectionViewCell.swift */; };
+		4C67332820510AFE0064C160 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C67332720510AFE0064C160 /* ChatViewController.swift */; };
 		4C8D7A7B204E2C4100E6AB7C /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D7A7A204E2C4100E6AB7C /* CreateAccountViewController.swift */; };
 		4C8D7A7D204E2EDA00E6AB7C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D7A7C204E2EDA00E6AB7C /* LoginViewController.swift */; };
 		DBAFBE10654C6878C2CEF394 /* Pods_FireHello.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B4483C775E655400E63305 /* Pods_FireHello.framework */; };
@@ -27,6 +31,10 @@
 		4C46F58B204E25DA007D58FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C46F58E204E25DA007D58FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C46F590204E25DA007D58FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C6733212050D9AC0064C160 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4C6733232050E61D0064C160 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		4C673325205104810064C160 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		4C67332720510AFE0064C160 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		4C8D7A7A204E2C4100E6AB7C /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		4C8D7A7C204E2EDA00E6AB7C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B7BB407614FDA5C08B24A559 /* Pods-FireHello.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireHello.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireHello/Pods-FireHello.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +73,7 @@
 		4C46F583204E25DA007D58FA /* FireHello */ = {
 			isa = PBXGroup;
 			children = (
+				4C6733212050D9AC0064C160 /* GoogleService-Info.plist */,
 				4C46F584204E25DA007D58FA /* AppDelegate.swift */,
 				4C46F586204E25DA007D58FA /* ViewController.swift */,
 				4C46F588204E25DA007D58FA /* Main.storyboard */,
@@ -73,6 +82,9 @@
 				4C46F590204E25DA007D58FA /* Info.plist */,
 				4C8D7A7A204E2C4100E6AB7C /* CreateAccountViewController.swift */,
 				4C8D7A7C204E2EDA00E6AB7C /* LoginViewController.swift */,
+				4C6733232050E61D0064C160 /* PhotosViewController.swift */,
+				4C673325205104810064C160 /* ImageCollectionViewCell.swift */,
+				4C67332720510AFE0064C160 /* ChatViewController.swift */,
 			);
 			path = FireHello;
 			sourceTree = "<group>";
@@ -157,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C46F58F204E25DA007D58FA /* LaunchScreen.storyboard in Resources */,
+				4C6733222050D9AC0064C160 /* GoogleService-Info.plist in Resources */,
 				4C46F58C204E25DA007D58FA /* Assets.xcassets in Resources */,
 				4C46F58A204E25DA007D58FA /* Main.storyboard in Resources */,
 			);
@@ -217,10 +230,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C673326205104810064C160 /* ImageCollectionViewCell.swift in Sources */,
 				4C8D7A7D204E2EDA00E6AB7C /* LoginViewController.swift in Sources */,
 				4C8D7A7B204E2C4100E6AB7C /* CreateAccountViewController.swift in Sources */,
+				4C67332820510AFE0064C160 /* ChatViewController.swift in Sources */,
 				4C46F587204E25DA007D58FA /* ViewController.swift in Sources */,
 				4C46F585204E25DA007D58FA /* AppDelegate.swift in Sources */,
+				4C6733242050E61D0064C160 /* PhotosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
