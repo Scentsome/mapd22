@@ -27,7 +27,7 @@ class ChatViewController: JSQMessagesViewController {
     private lazy var messageRef: DatabaseReference = self.channelRef!.child("messages")
     private var newMessageRefHandle: DatabaseHandle?
     
-    lazy var storageRef: StorageReference = Storage.storage().reference(forURL: "gs://fir-chatroom-b65de.appspot.com/")
+    lazy var storageRef: StorageReference = Storage.storage().reference(forURL: "gs://hellofirebase-44d24.appspot.com")
     
     private let imageURLNotSetKey = "NOTSET"
     
