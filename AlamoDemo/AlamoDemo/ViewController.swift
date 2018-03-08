@@ -10,6 +10,16 @@ import UIKit
 import Alamofire
 class ViewController: UIViewController {
     let hostURI = "http://localhost:8080"
+    
+    
+    @IBAction func getJSON(_ sender: Any) {
+        let parameters: Parameters = ["name": "michael", "age":"45"]
+        Alamofire.request(hostURI + "/filter", method: .get, parameters: parameters, encoding: URLEncoding.default)
+            .responseJSON { response in
+                debugPrint(response.value)
+        }
+    }
+    
     @IBAction func getMETHOD(_ sender: Any) {
 //        Alamofire.request(hostURI+"/console").response { response in
 //
@@ -62,6 +72,16 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func postMETHOD(_ sender: Any) {
+        var postURL = hostURI + "/updateInfo"
+        let params = [
+            "user":"michael",
+            "age":"23"
+            ] as [String : Any]
+        Alamofire.request(postURL, method: .post, parameters: params, encoding: JSONEncoding.default)
+            .responseJSON { response in
+                debugPrint(response)
+                
+        }
         
     }
     override func viewDidLoad() {
